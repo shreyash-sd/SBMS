@@ -4,11 +4,12 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 <bean id="petrolEng" class="in.ashokit.beans.PetrolEngine" />
+<bean id="dieselEng" class="in.ashokit.beans.DieselEngine" />
 
 
 
 <bean id="car" class="in.ashokit.beans.Car" >
- <property name="eng" ref="petrolEng" />
+ <property name="eng" ref="dieselEng" />
 </bean>
 
 </beans>
